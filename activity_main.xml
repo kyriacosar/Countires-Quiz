@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16sp"
+        android:paddingTop="16sp">
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/order_summary_name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:layout_marginBottom="16sp"
+            android:text="1. Which country is the segond largest?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/brazil_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Brazil"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer1"/>
+
+        <CheckBox
+            android:id="@+id/canada_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Canada"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer1"/>
+
+        <CheckBox
+            android:id="@+id/china_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="China"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer1"/>
+
+        <CheckBox
+            android:id="@+id/usa_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="United States of America"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:layout_marginBottom="16sp"
+            android:text="2. Which city is the capital of Cyprus?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/city_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16dp"
+            android:hint="City Name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="3. Which of the following flags is the flag of Ecuador?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/boliviaflag"
+                    android:layout_weight="0.45"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/bolivia_flag_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="checkSingleAnswer3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ecuadorflag"
+                    android:layout_weight="0.45"
+                    android:layout_centerHorizontal="true"/>
+
+                <CheckBox
+                    android:id="@+id/ecuador_flag_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="checkSingleAnswer3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/colombiaflag"
+                    android:layout_weight="0.45"
+                    android:layout_centerHorizontal="true"/>
+
+                <CheckBox
+                    android:id="@+id/colombia_flag_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="checkSingleAnswer3"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="4. How many countries are there?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/num89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="89"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer4"/>
+
+        <CheckBox
+            android:id="@+id/num195"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="195"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer4"/>
+
+        <CheckBox
+            android:id="@+id/num124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="124"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer4"/>
+
+        <CheckBox
+            android:id="@+id/num210"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="210"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="5. Which country is the richest?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/qatar_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Qatar"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer5"/>
+
+        <CheckBox
+            android:id="@+id/singapore_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Singapore"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer5"/>
+
+        <CheckBox
+            android:id="@+id/switzerland_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Switzerland"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer5"/>
+
+        <CheckBox
+            android:id="@+id/uae_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="United Arab Emirates"
+            android:textSize="16sp"
+            android:onClick="checkSingleAnswer5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="submitAnswers"
+            android:text="SUBMIT" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16sp"
+            android:text="Results"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/results_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+

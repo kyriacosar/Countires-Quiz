@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Countries</string>
+
+    <!-- Header text for the list of questions [CHAR LIMIT=20] -->
+    <string name="questions">Questions</string>
+
+    <!--
+        Name for the order summary. It will be shown in the format of "Name: Amy" where Amy is the
+        user's name. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_name">Name</string>
+</resources>
